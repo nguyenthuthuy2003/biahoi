@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bia Hơi</title>
+    <!-- Link to Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+     <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .banner {
+            background-image: url('./habeco.bmp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 700px;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-img-top {
+
+            object-fit: cover;
+            /* Ensure images cover the area without distortion */
+            width: 100%;
+        }
+
+        .category-list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+        }
+
+        .category-item {
+            text-align: center;
+            width: 120px;
+        }
+
+        .category-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="./logo.png" alt="">
+            <nav>
+                <a href="#product-carousel" class="text-white mx-2">Sản Phẩm</a>
+                <a href="#featured-product" class="text-white mx-2">Sản Phẩm Tiêu Biểu</a>
+                <a href="#pricing" class="text-white mx-2">Giá</a>
+                <a href="#news" class="text-white mx-2">Tin Tức</a>
+                <a href="#contact" class="text-white mx-2">Liên Hệ</a>
+            </nav>
+        </div>
+    </header>
+
+   
+    <div class="banner">
+        <div>
+
+            <a href="#product-carousel" class="btn btn-light btn-lg mt-3">Xem Sản Phẩm</a>
+        </div>
+    </div>
+
+    <div class="category-list">
+        <div class="category-item">
+            <img src="./trucbach-caocap.png" alt="Bia Trúc Bạch">
+            <p>Bia Trúc Bạch</p>
+        </div>
+        <div class="category-item">
+            <img src="./trucbach.png" alt="Bia Trúc Bạch">
+            <p>Bia Trúc Bạch</p>
+        </div>
+        <div class="category-item">
+            <img src="./bold.png" alt="Bia Hà Nội BOLD">
+            <p>Bia Hà Nội BOLD &LIGHT</p>
+        </div>
+        <div class="category-item">
+            <img src="./biahanoi.png" alt="Bia Hà Nội">
+            <p>Bia Hà Nội</p>
+        </div>
+    </div>
+
+    
+    <div id="product-carousel" class="container my-5">
+        <h2 class="text-center mb-4">Tất Cả Sản Phẩm</h2>
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./trucbach-caocap.png" class="card-img-top img-fluid"
+                                    alt="Bia Trúc Bạch Cao Cấp" style="width: 550px;height: 700px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bia Trúc Bạch Cao Cấp</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./trucbach.png" class="card-img-top img-fluid" alt="Bia Trúc Bạch" style="width: 550px;height: 700px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bia Trúc Bạch</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./bold.png" class="card-img-top img-fluid" alt="Bia Hà Nội BOLD" style="width: 550px;height: 700px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bia Hà Nội BOLD</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./light.png" class="card-img-top img-fluid" alt="Bia Hà Nội LIGHT" style="width: 550px;height: 700px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bia Hà Nội LIGHT</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./biahanoi.png" class="card-img-top img-fluid" alt="Sản phẩm 5" style="width: 550px;height: 700px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bia Hà Nội</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./biahanoi1890.png" class="card-img-top img-fluid" alt="Sản phẩm 6" style="width: 550px;height: 700px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bia Hà Nội 1809</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./biahanoinhanxanh.png" class="card-img-top img-fluid" alt="Sản phẩm 7" style="width: 550px;height: 700px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bia Hà Nội nhãn xanh</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./biahanoipremium.png" class="card-img-top img-fluid" alt="Sản phẩm 8" style="width: 550px;height: 700px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bia Hà Nội Premium</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+
+   
+    <div id="featured-product" class="container my-5">
+        <h2 class="text-center mb-4">Sản Phẩm Tiêu Biểu</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./biahoi.png" alt="Sản phẩm tiêu biểu" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3>Bia hơi Hà Nội</h3>
+                <p>Bia hơi Hà Nội, một nét văn hóa độc đáo của thủ đô, không chỉ đơn thuần là đồ uống mà còn là một phần không thể thiếu trong đời sống hàng ngày của người dân nơi đây. Với hương vị tươi mát, bia hơi được làm từ các nguyên liệu tự nhiên như nước, lúa mạch, và hoa houblon, mang lại cảm giác sảng khoái cho người thưởng thức.
+                    Điểm đặc biệt của bia hơi Hà Nội là sự tươi mới, được sản xuất và tiêu thụ ngay trong ngày, đảm bảo cho người uống có được trải nghiệm tuyệt vời nhất. Chỉ cần một cốc bia hơi, bạn có thể ngồi lại cùng bạn bè, ngắm nhìn phố phường nhộn nhịp và trò chuyện rôm rả trong không gian ấm cúng của những quán bia vỉa hè.
+                    </p>
+                <span>Giá : <strong style="color: red;">409.000đ</strong></span><br>
+                <button class="btn btn-primary mt-3">Đặt Hàng Ngay</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="pricing" class="container my-5">
+        <h2 class="text-center mb-4">Giá Các Sản Phẩm</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="./trucbach-caocap.png" alt="" class="img-fluid mb-3" style="width: 100px; height: 200px;">
+                <h3>Bia Trúc Bạch Cao Cấp</h3>
+                <p>Giá:  <strong style="color: red;">486.000 VNĐ</strong>/Hộp 6 chai 330ml</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./trucbach.png" alt="Bia Hơi Cao Cấp" class="img-fluid mb-3" style="width: 100px; height: 200px;">
+                <h3>Bia Trúc Bạch</h3>
+                <p>Giá:  <strong style="color: red;">465.000 VNĐ</strong>/Thùng 24 lon 330ml</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./bold.png" alt="Bia Hơi Đặc Biệt" class="img-fluid mb-3" style="width: 100px; height: 200px;">
+                <h3>Bia Hà Nội BOLD</h3>
+                <p>Giá: <strong style="color: red;">339.000 VNĐ</strong>/Thùng 24 lon 330ml</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./light.png" alt="" class="img-fluid mb-3" style="width: 100px; height: 200px;">
+                <h3>Bia Hà Nội LIGHT</h3>
+                <p>Giá:  <strong style="color: red;">399.000 VNĐ</strong>/Thùng 24 lon 330ml</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./biahanoi.png" alt="Bia Hơi Cao Cấp" class="img-fluid mb-3" style="width: 100px; height: 200px;">
+                <h3>Bia Hà Nội</h3>
+                <p>Giá:  <strong style="color: red;">295.000 VNĐ</strong>/Thùng 24 lon 330ml</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./biahanoi1890.png" alt="Bia Hơi Đặc Biệt" class="img-fluid mb-3" style="width: 100px; height: 200px;">
+                <h3>Bia Hà Nội 1890</h3>
+                <p>Giá:  <strong style="color: red;">224.000 VNĐ</strong>/Két 20 chai</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./biahanoinhanxanh.png" alt="" class="img-fluid mb-3" style="width: 100px; height: 200px;">
+                <h3>Bia Hà Nội nhãn xanh</h3>
+                <p>Giá:  <strong style="color: red;">285.000 VNĐ</strong>/Thùng 24 lon 330ml</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./biahanoipremium.png" alt="Bia Hơi Cao Cấp" class="img-fluid mb-3" style="width: 100px; height: 200px;">
+                <h3>Bia Hà Nội Premium</h3>
+                <p>Giá: <strong style="color: red;">349.000 VNĐ</strong>/Thùng 24 lon 330ml</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./biahoi.png" alt="Bia Hơi Đặc Biệt" class="img-fluid mb-3" style="width: 200px; height: 200px;">
+                <h3>Bia Hơi Hà Nội </h3>
+                <p>Giá:  <strong style="color: red;">409.000 VNĐ</strong>/Thùng 24 lon 500ml</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- News Section -->
+    <div id="news" class="container my-5">
+        <h2 class="text-center mb-4">Tin Tức</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="tintuc1.jpg" class="card-img-top" alt="Tin tức 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Bia Trúc Bạch – niềm tự hào của HABECO</h5>
+                        <p class="card-text">Hàng năm, cứ đến tháng Tám – tháng có nhiều dấu ấn lịch sử của dân tộc Việt
+                            Nam nói chung và của Tổng công ty CP Bia – Rượu – Nước giải khát Hà Nội (HABECO – Bia Hà
+                            Nội) nói riêng, các thế hệ CBCNV-LĐ Bia Hà Nội lại nhớ và tự hào với Ngày truyền thống của
+                            mình.Đó là ngày mùa Thu Hà Nội không thể nào quên 15/8, khởi nguồn từ 1958, sau khi tiếp
+                            quản và khôi phục lại Nhà máy Bia Hommel từ chính quyền thực dân Pháp, Nhà máy Bia Hà Nội
+                            nay là HABECO đã vui mừng chào đón đứa “con đầu lòng” của mình ra đời – Bia Trúc
+                            Bạch.Sở dĩ có tên Bia Trúc Bạch là sản phẩm được đặt theo tên hồ Trúc Bạch – một danh thắng
+                            lịch sử gắn liền với mảnh đất ngàn năm văn hiến Thăng Long – Hà Nội. Đây cũng là loại bia
+                            nội đầu tiên của Việt Nam được đông đảo người tiêu dùng biết đến từ năm 1958 với chất lượng
+                            được ví như “kiệt tác”. Cho đến nay, Bia Trúc Bạch được sản xuất dưới nhiều loại dung tích,
+                            gồm cả đóng lon và chai. Sản phẩm được HABECO định vị là dòng bia cao cấp và có sức cạnh
+                            tranh cao so với các dòng sản phẩm tên tuổi cùng loại trên thị trường.</p>
+                        <a href="https://www.congnghieptieudung.vn/bia-truc-bach-niem-tu-hao-cua-habeco-dt35229#:~:text=Theo%20HABECO%2C%20Bia%20Tr%C3%BAc%20B%E1%BA%A1ch,Ph%C3%A1p%20v%C3%A0%20C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c."
+                            class="btn btn-primary">Đọc Thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="tintuc2.png" class="card-img-top" alt="Tin tức 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Bia hơi Hà Nội: Từ thành tựu sáng tạo của người Việt đến nét văn hóa
+                            riêng xứ kinh kỳ</h5>
+                        <p class="card-text">Bia hơi Hà Nội từ lâu đã trở thành một thức uống đặc trưng đại diện cho
+                            tinh hoa ẩm thực Hà Thành. Vị thế ấy có được nhờ lịch sử trăm năm di sản, nhờ hương vị độc
+                            đáo và những giá trị văn hoá mà sản phẩm mang lại.
+                            Thức uống độc đáo được sáng tạo bởi người Việt
+
+                            Nhiều người Việt tự nhận mình sính ngoại nhưng với bia - thức uống vốn du nhập vào Việt Nam
+                            từ thế kỷ 19, thì “hàng nội” như Bia hơi Hà Nội lại được lòng hơn cả. Thậm chí, Bia hơi Hà
+                            Nội đã trở thành một đặc sản phải thử của bất kỳ du khách nào muốn trải nghiệm ẩm thực Hà
+                            Thành. Sự yêu mến đó không chỉ đến từ hương vị tươi ngon mát lạnh, mà còn nhờ câu chuyện
+                            trăm năm ẩn sau tên gọi thân thuộc.</p>
+                        <a href="https://nguoilambao.vn/bia-ho%CC%9Bi-ha%CC%80-no%CC%82i-tu-thanh-tuu-sang-tao-cua-nguoi-viet-den-net-van-hoa-rieng-xu-kinh-ky" class="btn btn-primary">Đọc Thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="tintuc3.jpg" class="card-img-top" alt="Tin tức 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Uống bia đúng cách để vị ngon thêm trọn vẹn</h5>
+                        <p class="card-text">Uống bia đúng cách để vị ngon thêm trọn vẹn
+                            Uống bia từ lâu đã trở thành một nét văn hoá vô cùng quen thuộc trong đời sống người Việt. Thế nhưng để có thể thưởng thức trọn vẹn hương vị tinh tuý của thức uống này là cả một nghệ thuật.
+                            
+                            Làm thế nào để uống bia ngon hơn?
+                            
+                            Khi cầm chai bia uống, mũi người chỉ ngửi mùi của môi trường xung quanh mà không thể ngửi thấy mùi của bia, là lý do uống bia bằng cốc ngon hơn những cách uống khác.
+                            
+                            Từ lâu, nhiều người thắc mắc tại sao khi uống bia rót từ cốc, họ luôn có cảm giác hương vị ngon hơn các cách uống khác. Giáo sư Hendrik Zwaardemaker, Đại học Utrecht, Hà Lan đã thực hiện công trình nghiên cứu khoa học để làm rõ điều này.</p>
+                        <br>
+                            <a href="https://bianhapkhau.com.vn/uong-bia-dung-cach-de-vi-ngon-them-tron-ven" class="btn btn-primary">Đọc Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Liên Hệ</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Tên của bạn</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nhập tên của bạn">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Lời nhắn</label>
+                        <textarea class="form-control" id="message" rows="4"
+                            placeholder="Nhập lời nhắn của bạn"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-3">
+                <a class="footer__logo d-block mb-2" href="#">
+                    <img src="./logo.png" alt="Habeco Logo" class="img-fluid">
+                </a>
+                <div class="footer__text">
+                    TỔNG CÔNG TY CỔ PHẦN BIA - RƯỢU - NƯỚC GIẢI KHÁT HÀ NỘI
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="footer__copyright">
+                    Copyright 2020 © Habeco
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <nav class="f-social d-flex justify-content-center">
+                    <a class="f-social__item mx-2" href="#!">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="f-social__item mx-2" href="#!">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="f-social__item mx-2" href="#!">
+                        <i class="fas fa-phone"></i> 
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
